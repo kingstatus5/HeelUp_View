@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --color-hu-gray: #8a9199;
+  --color-hu-charcoal: #1a1d21;
+  --color-hu-soft: #c5cbcf;
+  --color-hu-offwhite: #f2f4f5;
+  --color-hu-cyan: #5ec8d4;
+  --color-hu-cyan-muted: #3a9aa6;
+  --color-hu-panel: #121417;
+  --color-hu-panel-light: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+:root.light {
+  color-scheme: light;
+}
+
+.hu-panel {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.hu-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(94, 200, 212, 0.35) transparent;
+}
+
+button {
+  touch-action: manipulation;
+}
